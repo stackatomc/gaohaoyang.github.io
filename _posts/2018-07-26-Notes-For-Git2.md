@@ -6,9 +6,12 @@ tags: Git
 author: stackc
 ---
 
+<<<<<<< HEAD
 * content
 {:toc}
 
+=======
+>>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 >该笔记用于简记Git建立与使用远程仓库
 
 

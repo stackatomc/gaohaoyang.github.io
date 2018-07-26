@@ -1,14 +1,21 @@
 ---
 layout: post
+<<<<<<< HEAD
 title:  "MySQL-Crash-Course-25"
+=======
+title:  "chapter25使用触发器"
+>>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 categories: Notes-For-MySQL-Crash-Course
 tags: MySQL
 author: stackc
 ---
 
+<<<<<<< HEAD
 * content
 {:toc}
 
+=======
+>>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 >该笔记用于简记常见MySQL触发器
 
 

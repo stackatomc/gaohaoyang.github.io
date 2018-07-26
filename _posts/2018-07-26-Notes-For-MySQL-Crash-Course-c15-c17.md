@@ -1,14 +1,21 @@
 ---
 layout: post
+<<<<<<< HEAD
 title:  "MySQL-Crash-Course-15-17"
+=======
+title:  "chapter15联结表&chapter16创建高级联结&chapter17组合查询"
+>>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 categories: Notes-For-MySQL-Crash-Course
 tags: MySQL
 author: stackc
 ---
 
+<<<<<<< HEAD
 * content
 {:toc}
 
+=======
+>>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 >该笔记用于简记常见MySQL联结表
 
 

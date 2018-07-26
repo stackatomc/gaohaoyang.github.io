@@ -6,9 +6,12 @@ tags: Jekyll
 author: stackc
 ---
 
+<<<<<<< HEAD
 * content
 {:toc}
 
+=======
+>>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 >该笔记用于简记Jekyll小白入门操作
 
 
