@@ -1,21 +1,14 @@
 ---
 layout: post
-<<<<<<< HEAD
 title:  "MySQL-Crash-Course-27-30"
-=======
-title:  "chapter27全球化和本地化&chapter28安全管理&chapter29数据库维护&chapter30改善性能"
->>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 categories: Notes-For-MySQL-Crash-Course
 tags: MySQL
 author: stackc
 ---
 
-<<<<<<< HEAD
 * content
 {:toc}
 
-=======
->>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 >该笔记用于简记常见MySQL其他问题
 
 

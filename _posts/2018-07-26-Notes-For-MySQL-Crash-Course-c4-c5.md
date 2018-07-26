@@ -1,21 +1,14 @@
 ---
 layout: post
-<<<<<<< HEAD
 title:  "MySQL-Crash-Course-04-05"
-=======
-title:  "chapter04检索数据&chapter05排序检索数据"
->>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 categories: Notes-For-MySQL-Crash-Course
 tags: MySQL
 author: stackc
 ---
 
-<<<<<<< HEAD
 * content
 {:toc}
 
-=======
->>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 >该笔记用于简记MySQL基本使用
 
 

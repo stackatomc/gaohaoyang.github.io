@@ -1,21 +1,14 @@
 ---
 layout: post
-<<<<<<< HEAD
 title:  "MySQL-Crash-Course-19-20"
-=======
-title:  "chapter19插入数据&chapter20更新和删除数据"
->>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 categories: Notes-For-MySQL-Crash-Course
 tags: MySQL
 author: stackc
 ---
 
-<<<<<<< HEAD
 * content
 {:toc}
 
-=======
->>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 >该笔记用于简记常见MySQL常见DML操作
 
 

@@ -1,21 +1,14 @@
 ---
 layout: post
-<<<<<<< HEAD
 title:  "MySQL-Crash-Course-18"
-=======
-title:  "chapter18全文本搜索"
->>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 categories: Notes-For-MySQL-Crash-Course
 tags: MySQL
 author: stackc
 ---
 
-<<<<<<< HEAD
 * content
 {:toc}
 
-=======
->>>>>>> 1c5fe1ad4b3e9ac8775f5c4456f095f36f72b77a
 >该笔记用于简记常见MySQL全文本搜索
 
 
