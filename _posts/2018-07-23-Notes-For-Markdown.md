@@ -6,6 +6,9 @@ tags: Markdown
 author: stackc
 ---
 
+* content
+{:toc}
+
 > 该笔记用于简记Markdown常用语法
 
 
