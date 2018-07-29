@@ -3,7 +3,7 @@ layout: post
 title:  "Notes For Git(PART3)"
 categories: Git
 tags: Git
-author: stackc
+author: MayerFang
 ---
 
 * content

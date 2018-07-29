@@ -3,7 +3,7 @@ layout: post
 title:  "Notes For Jekyll"
 categories: Jekyll
 tags: Jekyll
-author: stackc
+author: MayerFang
 ---
 
 * content

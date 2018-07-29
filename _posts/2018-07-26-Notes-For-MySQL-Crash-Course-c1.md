@@ -3,7 +3,7 @@ layout: post
 title:  "MySQL-Crash-Course-01"
 categories: Notes-For-MySQL-Crash-Course
 tags: MySQL
-author: stackc
+author: MayerFang
 ---
 
 * content

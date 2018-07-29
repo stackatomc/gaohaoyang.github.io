@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Notes-For-Markdown"
+title:  "Notes For Markdown"
 categories: Markdown
 tags: Markdown
-author: stackc
+author: MayerFang
 ---
 
 * content
