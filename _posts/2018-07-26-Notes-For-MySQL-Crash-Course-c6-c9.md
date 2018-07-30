@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "MySQL-Crash-Course-06-09"
-categories: Notes-For-MySQL-Crash-Course
-tags: MySQL
+categories: MySQL-beginner
+tags: Notes-For-MySQL-Crash-Course
 author: MayerFang
 ---
 
@@ -43,12 +43,12 @@ author: MayerFang
 ## <> !=  和 IS NULL 对比
 
 - <> 和 != 注意一个点，当希望查询出结果不匹配的行时，使用左边符号为NULL的行会默认被排除在外不属于不匹配而是未知行不返回在结果中
-```MySQL
+```
 mysql> SELECT userid,username FROM t_user where username <> 'xiaowang'; 
 // 默认不返回该列为NULL的行，只返回其他不匹配的非空行
 ```
 - IS NULL的用法(注意认真记住第二点 = NULL 是错误的, IS NULL 是正确用法)
-```MySQL
+```
 mysql> SELECT userid,username FROM t_user where username IS NULL;
 mysql> SELECT userid,username FROM t_user where username = NULL; //这种查询是错误的
 ```
@@ -59,7 +59,9 @@ mysql> SELECT userid,username FROM t_user where username = NULL; //这种查询�
 在控制台启动方法: 以管理员身份进入控制台, 启动命令为 `> net start MySQL` 即可,MySQL注意大小写,mysql将不被系统识别出对应服务.暂停MySQL服务未`> net stop mysql`，注意没有分号.
 
 > Point 2. MySQL中使用单引号还是双引号
-```双引号里面的字段会经过编译器解释然后再当作HTML代码输出，但是单引号里面的不需要解释，直接输出。例如：
+
+```
+双引号里面的字段会经过编译器解释然后再当作HTML代码输出，但是单引号里面的不需要解释，直接输出。例如：
 $abc='I love u';
 echo $abc //结果是:I love u
 echo '$abc' //结果是:$abc
@@ -77,7 +79,8 @@ SQL2="select * from table where user=' abc ' "
 SQL1可以分解为以下3个部分
 1："select * from table where user=' "
 2：$user
-3：" ' "    字符串之间用 . 来连接，这样能明白了吧。```
+3：" ' "    字符串之间用 . 来连接，这样能明白了吧。
+```
 [yfm081616的博客](https://blog.csdn.net/yfm081616/article/details/59499150)(参考来源)
 
 > 自己总结:
@@ -90,15 +93,14 @@ SQL1可以分解为以下3个部分
 ## 括号 改变执行语义
 
 - 当条件过多时，OR等操作需要使用()括号，避免查询语义模糊
-```MySQL
+
+```
 mysql> SELECT prod_name,prod_price FROM products WHERE prod_price >= 10 AND vend_id=1002 OR vend_id=1003;// SQL1中AND等级优先于OR，因此prod_price >= 10 AND vend_id=1002被结合看作一个新过滤条件. 判断为满足prod_price >= 10 AND vend_id=1002或只满足vend_id=1003均可作为返回结果.
 mysql> SELECT prod_name,prod_price FROM products WHERE (prod_price >= 10 AND vend_id=1002) OR vend_id=1003;//SQL2同SQL1.
 mysql> SELECT prod_name,prod_price FROM products WHERE prod_price >= 10 AND (vend_id=1002 OR vend_id=1003);//SQL3.语义改变，由于()括号优先级高，所以两个独立条件为prod_price >= 10或(vend_id=1002 OR vend_id=1003)均可返回结果
 mysql> SELECT prod_name,prod_price FROM products WHERE (vend_id=1002 OR vend_id=1003) AND prod_price>=10;//SQL4同SQL3.
 mysql> SELECT prod_name,prod_price FROM products WHERE prod_price >=10 AND vend_id IN (1002,1003);//SQL5同SQL3.
 ```
-
-
 对比上面五句SQL语句，第一句执行结果与后面不同.虽然有时候觉得()使用的有些突兀，但是结果是正确的.
 
 ---
@@ -135,7 +137,7 @@ mysql> SELECT prod_name,prod_price FROM products WHERE prod_price >=10 AND vend_
 - _ 下划线只匹配指定位置的一个字符.
 - 使用通配符的技巧: 除非绝对有必要，否则尽量不把其用在搜索模式的开始.把通配符至于搜索模式的开始处，搜索起来时最慢的。本来想对比一下使用%和正则表达式$的性能差异，如 '%jet5'和'jet5$',但是暂时找不到答案.
 
-```MySQL
+```
 //LIKE与通配符 语法
 mysql> SELECT age from t_user where username LIKE '_ jet 15';//注意空格，_在该命令中指空格前任意一个字符，若空格前有两个则无果.此外jet在window默认情况下不区分大小写将输出所有结果
 //表中

@@ -59,6 +59,7 @@ author: MayerFang
 	- 也进行某些修改 `vi readme.md` -> `$git add readme.md` -> `'$git commit -m 'readme.md by master'` 
 	- master执行合并分支命令 `$git merge feature1` 由于当前master与feature1分支上数据不一致,需要先解决冲突,查询冲突文件的冲突信息`$git status`???不用pull?
 	- 冲突信息解释: <<<<<<<<< <当前分支name> ========= 分割 >>>>>>>>>>> <对方分支name>
+
 ```
 Git is a distributed version control system.
 Git is free software distributed under the GPL.

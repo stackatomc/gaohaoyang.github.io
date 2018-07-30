@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "MySQL-Crash-Course-22"
-categories: Notes-For-MySQL-Crash-Course
-tags: MySQL
+categories: MySQL-beginner
+tags: Notes-For-MySQL-Crash-Course
 author: MayerFang
 ---
 
@@ -49,6 +49,7 @@ author: MayerFang
 	- 创建视图建议使用先DROP `DROP VIEW IF EXISTS v_ta`再用CREATE,也可以直接用CREATE OR REPLACE VIEW(感觉这样操作安全性不高)
 
 - 语句: 
+
 ```
 > CREATE VIEW v_ta AS SELECT t_a.sname,t_c.sage FROM t_a,t_c WHERE t_a.sid=t_c.id; //应明确指明表.字段,避免模糊不清ambiguous
 > CREATE VIEW v_ta2 AS SELECT a.sname,c.sage FROM t_a a,t_c c WHERE a.sid=c.sid;//可使用表的别名;

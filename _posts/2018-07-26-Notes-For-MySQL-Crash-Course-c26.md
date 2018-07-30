@@ -2,7 +2,8 @@
 layout: post
 title:  "MySQL-Crash-Course-26"
 categories: Notes-For-MySQL-Crash-Course
-tags: MySQL
+categories: MySQL-beginner
+tags: Notes-For-MySQL-Crash-Course
 author: MayerFang
 ---
 
@@ -40,6 +41,7 @@ author: MayerFang
 	- 提交commit: 将指为存储的SQL语句结果写入数据库表中
 	- 保留点savepoint: 指事务处理中设置的临时占位符,可以对它发布回退(与回退整个事务处理不同) 
 - 三个实例
+
 ```
 //ROLLBACK使用
 SELECT * FROM ordertotals；

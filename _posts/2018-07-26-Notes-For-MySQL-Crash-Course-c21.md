@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "MySQL-Crash-Course-21"
-categories: Notes-For-MySQL-Crash-Course
-tags: MySQL
+categories: MySQL-beginner
+tags: Notes-For-MySQL-Crash-Course
 author: MayerFang
 ---
 
@@ -43,6 +43,7 @@ author: MayerFang
 ### 主键定义
 
 - 语句: 
+
 ```
 CREATE TABLE t_a(
 	id int primary key AUTO_INCREMENT,
@@ -78,6 +79,7 @@ CREATE TABLE t_b(
 ## 指定默认值
 
 - 语法: 
+
 ```
 CREATE TABLE t_a(
 	id INT PRIMARY KEY AUTO_INCREMENT,
@@ -85,6 +87,7 @@ CREATE TABLE t_a(
 	age INT NOT NULL DEFAULT 0
 );
 ```
+
 - 实用场景: 由于我工作方向是后端,主要在项目中也会应用到项目与数据库交互的部分.另外,单纯对数据库操作默认DEFAULT与NOT NULL的搭配确实看上去十分实用!避免被动性和忽略性等导致的数据库问题.
 
 > Mind 1.从DEFAULT引发的一些思考
@@ -108,6 +111,7 @@ name VARCHAR(20)
 
 - 查看系统当前引擎: `show ENGINES;`  Support中DEFAULT为默认引擎
 - 查看指定表的引擎(引擎作为创建表的信息显示): `SHOW CREATE TABLE t_a;`
+
 ```
 +-----------+-------------------------+
 | t_teacher | CREATE TABLE `t_teacher` (

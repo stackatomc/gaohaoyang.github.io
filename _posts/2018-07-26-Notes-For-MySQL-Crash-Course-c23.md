@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "MySQL-Crash-Course-23"
-categories: Notes-For-MySQL-Crash-Course
-tags: MySQL
+categories: MySQL-beginner
+tags: Notes-For-MySQL-Crash-Course
 author: MayerFang
 ---
 
@@ -160,7 +160,7 @@ DEMILITER ;
 - 检查存储过程创建: `SHOW CREATE PROCEDURE proc_a;` 
 - 查看所有存储过程状态,对表的查看语句类似,包括何时、由谁创建等详细信息的存储过程列表: `SHOW PROCEDURE STATUS;` 表`SHOW TABLE STATUS;`
 
-```MySQL
+```
 mysql> show create procedure proc_a;
 +-----------+----------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+----------------------+--------------------+
 | Procedure | sql_mode                                                       | Create Procedure                                                                                                                                    | character_set_client | collation_connection | Database Collation |

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "MySQL-Crash-Course-02"
-categories: Notes-For-MySQL-Crash-Course
-tags: MySQL
+categories: MySQL-beginner
+tags: Notes-For-MySQL-Crash-Course
 author: MayerFang
 ---
 
@@ -43,7 +43,8 @@ author: MayerFang
     - 进入mysql>后,每句命令用;结束
     - exit 或 quit回车退出mysql
     - 操作过程
-```sql
+
+```
 1.打开mysql服务
 1) 方法一 右键"此电脑" -> "管理" -> "服务和应用程序" -> 在"服务"中选择MySQL选择启动
 2)比较简单 方法二 "任务管理器" -> 在"服务"中选择MySQL选择启动
@@ -56,7 +57,9 @@ Enter password: 在这里输入密码,上面-p表示申请需要输入密码,在
 3.使用mysql命令行实用工具
 工具: MySQL 5.5 Command Line Client(实际位置:MYSQL安装目录/bin/mysql.exe)
 操作: 点开后 提示Enter password:(默认root登陆) 后面同
-远程: 在系统控制台cmd中输入: ...绝对位置/mysql.exe -P 端口 -h 主机名 -u 用户 -p回车 ,即可指定 ```
+远程: 在系统控制台cmd中输入: ...绝对位置/mysql.exe -P 端口 -h 主机名 -u 用户 -p回车 ,即可指定
+```
+
 - MySQL Administrator(MySQL管理器)
     - MySQL Administrator是一个图形交互客户机，用于简化MySQL服务器的管理
     - 不作为MySQL的核心组成部分安装，因此需要自行下载

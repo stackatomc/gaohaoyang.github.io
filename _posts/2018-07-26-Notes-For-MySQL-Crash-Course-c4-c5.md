@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "MySQL-Crash-Course-04-05"
-categories: Notes-For-MySQL-Crash-Course
-tags: MySQL
+categories: MySQL-beginner
+tags: Notes-For-MySQL-Crash-Course
 author: MayerFang
 ---
 

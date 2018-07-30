@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "MySQL-Crash-Course-10-11"
-categories: Notes-For-MySQL-Crash-Course
-tags: MySQL
+categories: MySQL-beginner
+tags: Notes-For-MySQL-Crash-Course
 author: MayerFang
 ---
 
@@ -68,7 +68,7 @@ author: MayerFang
 - 常见: Left() 返回字符串左边内容;Right();Upper() 大写;Lower()小写;Trim()去左右空格;LTrim()去左边空格;RTrim();Length();Soundex()返回串的SOUNDEX值;Substring(str,start,length)从start位置输出直到末尾截取str,第一个字符为start=1而不是0,若start为负值则反向寻找start起点.
 - 注意: Trim()等均不对中间空格做处理
 
-```MySQL
+```
 mysql> select substring('hello',2);
 +----------------------+
 | substring('hello',2) |
@@ -104,7 +104,8 @@ mysql> select substring('hello',0);//0不可以作为start位置，第三个参�
 
 
 ** 实例 **
-```MySQL
+
+```
 · 第一类不带参数查询日期时间
 mysql> SELECT CurDate();
 +------------+
@@ -154,7 +155,7 @@ mysql> select DATE_ADD(NOW(),INTERVAL 2 DAY) AS NEWDATE;
 > Point 2.匹配时注意尽可能原子化匹配日期
 > 举例为`2018-08-08`无法直接匹配出当日所有时间如`2018-08-08 11:13:25`,只能匹配出`2018-08-08` ，所以查询时要指定具体字段的`Date(createtime)`类似这样。这是一个小技巧点！
 > 
-```MySQL
+```
 mysql> insert into t_student values(null,"2018-07-16",4);
 mysql> insert into t_student values(null,"2018-07-16 13:16:26",4);
 mysql> select * from t_student where createtime = Now();
@@ -176,7 +177,7 @@ mysql> select sid,createtime,sage from t_student where Date(createtime) = '2018-
 2 rows in set, 9 warnings (0.00 sec)
 ```
 > Point 3.还有一种匹配当月的两种思路
-```MySQL
+```
 一、只提取出对应列的月（提取列值关键部分）进行等值的 = 数值比较
 mysql> select sid,sname from t_student where Month(sname) = '7';
 +------------+---------------------+
@@ -186,7 +187,6 @@ mysql> select sid,sname from t_student where Month(sname) = '7';
 | 0000000013 | 2018-07-17 13:16:26 |
 +------------+---------------------+
 2 rows in set, 9 warnings (0.00 sec)
-
 二、对所有数据使用like等做相近通配符处理检索
 mysql> select * from t_student where sname like '2018-07%';
 +------------+---------------------+------+
@@ -197,8 +197,6 @@ mysql> select * from t_student where sname like '2018-07%';
 | 0000000016 | 2018-07-16 13:16:26 | NULL |
 +------------+---------------------+------+
 3 rows in set (0.00 sec)
-
-
 三、使用BETWEEN ... AND ... 匹配出中间日期（使用范围检索日期记录）
 mysql> select sid,sname from t_Student where sname between '2018-07-01' and '2018-07-31';
 +------------+---------------------+
@@ -208,8 +206,6 @@ mysql> select sid,sname from t_Student where sname between '2018-07-01' and '201
 | 0000000013 | 2018-07-17 13:16:26 |
 +------------+---------------------+
 2 rows in set (0.00 sec)
-
-
 ```
 
 > Mind 1.说说我的感受

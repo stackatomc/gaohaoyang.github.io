@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "MySQL-Crash-Course-24"
-categories: Notes-For-MySQL-Crash-Course
-tags: MySQL
+categories: MySQL-beginner
+tags: Notes-For-MySQL-Crash-Course
 author: MayerFang
 ---
 
@@ -43,6 +43,7 @@ author: MayerFang
 	- 存储过程中内部的注解方式是 -- 开头
 
 - 实例(实例给出太少,学的非常浅,日后需加强)
+
 ```
 CREATE PROCEDURE proc_a()
 BEGIN
