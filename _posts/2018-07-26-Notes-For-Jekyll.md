@@ -93,7 +93,7 @@ author: MayerFang
 ├── _includes 可加载到布局或文件中使用. 加载_includes/file.ext
 |   ├── footer.html
 |   └── header.html
-├── _layouts 文章外部的模板.布局可在YAML头信息中选择. `{{ content }}`
+├── _layouts 文章外部的模板.布局可在YAML头信息中选择. content...
 |   ├── default.html
 |   └── post.html
 ├── _posts 文章.文件格式必须符合YEAR-MONTH-DAY-title.MARKUP数据和标记语言都确定自文件名
@@ -105,9 +105,10 @@ author: MayerFang
 └── index.html 若文件包含YAML头信息,Jekyll会自动将它们进行转换. 其他格式文件在站点跟目下非上述目录也会被转换.
 
 - 注意：
-	- _layout 比较重要，在头信息中定义的layout: post则是等于制定了加载_layout中的post模板，可以很容易的切换模板和应用模板，并使用如```{{ page.author }}``` 对模板进行引用设计
+	- _layout 比较重要，在头信息中定义的layout: post则是等于制定了加载_layout中的post模板，可以很容易的切换模板和应用模板，并使用如page.author...对模板进行引用设计
 	- _posts 为文章放置位置，注意命名格式符合YEAR-MONTH-DAY-title.MARKUP 如`2018-07-22-Week-Trends.md` 符合命名规范才可以被识别
 	- index.html 同基本的网站搭建，为网站根目录或子目录下的的默认文件.（这次fork的模板中也涉及这个文件的修改）
 	- 图片可统一存在在博客根目录创建自己的asserts文件夹下，直接定位图片即可，但推荐使用七牛云等云存储空间进行存储
 	- _site.xml目录为Jekyll转换后文件默认放这里,推荐将该目录放进.gitignore文件中
 	- 另外要注意_config.yml需要配置不少参数，具体参考官方文档和原Jekyll模板作者的说明，注意设置主页显示摘要的格式设计等在_post最后放入的文档中要做相应修改
+（其中有些无法显示，暂时用...标注）

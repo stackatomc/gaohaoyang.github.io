@@ -59,6 +59,6 @@ category_dir: category/
 excerpt_separator: "\n\n\n\n"
 
 # paginate
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 # 每页展示文章数量
 paginate: 5
